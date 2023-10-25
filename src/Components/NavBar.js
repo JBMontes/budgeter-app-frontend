@@ -1,6 +1,7 @@
 function NavBar(){
 
     return(<>
+    <h1>Budgeter </h1>
 
     </>)
 }

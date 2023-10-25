@@ -8,7 +8,8 @@ function TransactionCard({date, item_name,amount}){
             
             <p>{item_name}</p>
 
-            <p>{amount}</p>
+            <p>${amount}.00</p>
+
         </div>
     </>)
 }
