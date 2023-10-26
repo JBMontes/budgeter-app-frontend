@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import TransactionCard from './TransactionCard';
 
 function TransactionList(){
@@ -18,9 +18,11 @@ function TransactionList(){
     return(<>
     <h1>Transaction List</h1>
         <div>
-            {transaction.map((purchase)=> {
+            {transaction.map((purchase,index)=> {
+
                 return <TransactionCard 
                 key={purchase.id}
+                id={purchase.id}
                 date={purchase.date}
                 item_name= {purchase.item_name}
                 amount={purchase.amount}
