@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "../Styles/TransactionCard.css";
 
 function TransactionCard({ id, date, item_name, amount }) {
+   
   return (
     <>
       <div className="transactionCard">

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import "../Styles/EditTransaction.css";
 
@@ -16,6 +16,15 @@ function EditTransaction() {
     from: "",
     category: "",
   });
+
+
+// Grabs Previous Value
+  useEffect(() => {
+    fetch(`${API}/transactions/${id}`)
+    .then((response) => response.json())
+    .then((responseJSON) => setTransaction(responseJSON))
+    .catch(() => navigate("/not-found"));
+  }, [id, navigate]);
 
   const updateTransaction = () => {
     fetch(`${API}/transactions/${id}`, {
@@ -59,7 +68,7 @@ function EditTransaction() {
         <div className="form">
           <label className="form-label">Amount:</label>
           <input
-            type="text"
+            type="number"
             id="amount"
             className="form-input"
             value={transaction.amount}
@@ -70,7 +79,7 @@ function EditTransaction() {
         <div className="form">
           <label className="form-label">Date:</label>
           <input
-            type="text"
+            type="date"
             id="date"
             className="form-input"
             value={transaction.date}

@@ -74,7 +74,7 @@ function AddTransaction() {
             <label className="form-label">
               Amount:
               <input
-                type="text"
+                type="number"
                 id="amount"
                 className="form-input"
                 value={transaction.amount}
@@ -86,7 +86,7 @@ function AddTransaction() {
           <div className="form">
             <label className="form-label">Date:</label>
             <input
-              type="text"
+              type="date"
               id="date"
               className="form-input"
               value={transaction.date}
