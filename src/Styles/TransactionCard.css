@@ -9,7 +9,7 @@
   background-color: white;
   width: 50%;
   border-radius: 70%;
-  padding: 60px;
+  padding: 50px;
   margin-bottom: 10px;
   margin: 40px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -17,6 +17,8 @@
   font-size: x-large;
   background-color: rgb(44, 193, 64);
   border-radius: 80%;
+  box-shadow: 1px 4px;
+ 
 }
 
 .card:hover {
@@ -29,6 +31,8 @@
 
   flex-direction: row;
   justify-content: center;
+  animation-name: slide;
+  animation-duration: 5s;
 }
 
 .TLTitle {
@@ -43,4 +47,13 @@
 
 span{
     color:white
+}
+
+@keyframes slide{
+    from {
+        position:relative; 
+        left:1300px} 
+    to{ 
+        position:relative;
+        left:0px}
 }

@@ -1,33 +1,36 @@
 .nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border: 2px solid black;
-  background-color: green;
-  height: 80px;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: green;
+    height: 80px;
 }
 
-.header_title {
-  text-decoration: none;
-  color: rgb(225, 218, 14);
-  font-family: "Cherry Bomb One";
-  font-size: xx-large;
+.header_title{
+
+   text-decoration: none;
+   color: rgb(225, 218, 14);
+   font-family: "Cherry Bomb One";
+      font-size: xx-large;
+   
 }
 
-.header_title :hover {
-  color: white;
+.header_title :hover{
+ color:white;
 }
 
-.header_button {
-  border-radius: 45px;
-  background-color: white;
-  padding: 10px;
-  font-family: monospace;
-  font-size: larger;
+.header_button{
+border-radius: 45px;
+background-color: white;
+padding:10px;
+font-family:monospace;
+font-size: larger;
 }
 
-.header_button:hover {
-  background-color: rgb(242, 211, 11);
+.header_button:hover{
+ background-color: rgb(242, 211, 11);
 }
