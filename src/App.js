@@ -20,7 +20,7 @@ function App() {
           <Route path="/transactions/:id" element={<TransactionDetail />} />
           <Route path="/transactions/:id/edit" element={<EditTransaction/>} />
         </Routes>
-
+        
       </Router>
     </div>
   );

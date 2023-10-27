@@ -7,6 +7,8 @@
     padding: 30px;
     font-family:monospace;
     color: red;
+    background-color: white;
+    opacity: .9;
 
 }
 
@@ -75,4 +77,8 @@ align-items: center;
     background-color:black;
     color:white;
     border-color: white;
+}
+
+.detailsH{
+    color:red
 }

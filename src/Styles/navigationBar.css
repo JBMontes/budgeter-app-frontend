@@ -13,9 +13,10 @@
 .header_title{
 
    text-decoration: none;
-   color: black;
-   font-family:'Times New Roman', Times, serif;
-   font-size: xx-large;
+   color: rgb(225, 218, 14);
+   font-family: "Cherry Bomb One";
+      font-size: xx-large;
+   
 }
 
 .header_title :hover{
@@ -25,4 +26,11 @@
 .header_button{
 border-radius: 45px;
 background-color: white;
+padding:10px;
+font-family:monospace;
+font-size: larger;
+}
+
+.header_button:hover{
+ background-color: rgb(242, 211, 11);
 }

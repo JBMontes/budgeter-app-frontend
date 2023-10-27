@@ -17,7 +17,7 @@ function TransactionList({id}){
     });
 
     return(<>
-    <h1>Transaction List</h1>
+    <h1 className="TLTitle">Transaction List</h1>
         <div className="masterCard">
             {transaction.map((purchase)=> {
 

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {useNavigate} from "react-router-dom";
+import "../Styles/AddTransaction.css"
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -57,12 +58,13 @@ function AddTransaction(){
       };
 
     return(
+      <div className="addTransactionMaster">
 <div className="addTransaction">
 <h2>Add Transaction</h2>
 
 <form onSubmit={handleSubmit}>
         <div className="form">
-        <label className='form-label'>Item Name:</label>
+        <label className='form-label'>Item Name:
         <input 
         id='item_name'
         type='text'
@@ -70,17 +72,17 @@ function AddTransaction(){
         value={transaction.item_name}
         onChange={handleTextChange}
         placeholder="Item-Name"/>
-
+</label>
         </div>
         <div className="form">
-        <label className='form-label'>Amount:</label>
+        <label className='form-label'>Amount:
         <input type="text"
         id="amount"
          className="form-input"
          value={transaction.amount}
          onChange={handleTextChange}
          placeholder="Amount"/>
-
+</label>
         </div>
         <div className="form">
         <label className='form-label'>Date:</label>
@@ -93,25 +95,25 @@ function AddTransaction(){
 
         </div>
         <div className="form">
-        <label className='form-label'>From:</label>
+        <label className='form-label'>From:
         <input type='text'
         id="from"
          className="form-input"
          value={transaction.from}
          onChange={handleTextChange}
           placeholder="From"/>
-
+</label>
         </div>
        
         <div className="form">
-        <label className='form-label'>Category:</label>
+        <label className='form-label'>Category:
         <input type='text'
         id="category"
          className="form-input"
          value={transaction.category}
          onChange={handleTextChange}
          placeholder="Category"/>
-
+</label>
         </div>
         <button type='submit' className='btn'>
             Submit
@@ -119,6 +121,7 @@ function AddTransaction(){
     
 </form>
 
+</div>
 </div>
     )
 }

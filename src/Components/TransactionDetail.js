@@ -35,15 +35,15 @@ function TransactionDetail(){
         <div className="borderMaster">
 <div className="details">
 
-     <h1>ID: {transaction.id}</h1>
+     <h1 className="detailsH">ID: {transaction.id}</h1>
 
-     <h2>Name: {transaction.item_name}</h2>
+     <h2 className="detailsH">Name: {transaction.item_name}</h2>
 
-     <h2>Amount: ${transaction.amount}.00</h2>
+     <h2 className="detailsH">Amount: ${transaction.amount}.00</h2>
 
-     <h2>Date: {transaction.date}</h2>
+     <h2 className="detailsH">Date: {transaction.date}</h2>
 
-     <h2>Category: {transaction.category}</h2>
+     <h2 className="detailsH">Category: {transaction.category}</h2>
 
 </div>
 </div>

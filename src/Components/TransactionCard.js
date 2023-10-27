@@ -12,7 +12,7 @@ function TransactionCard({id,date, item_name,amount}){
 
             <p>{date}</p>
             
-            <Link to={`/transactions/${id}`}><p>{item_name}</p></Link>
+            <Link to={`/transactions/${id}`} className="transactionCardLink"><p>{item_name}</p></Link>
 
             <p>${amount}.00</p>
             </div>
