@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 // import { Link } from "react-router-dom";
 import TransactionCard from './TransactionCard';
+import "../Styles/TransactionCard.css"
 
-function TransactionList(){
+function TransactionList({id}){
 
     const [transaction, setTransaction] = useState([]);
     const API = process.env.REACT_APP_API_URL;
@@ -17,8 +18,8 @@ function TransactionList(){
 
     return(<>
     <h1>Transaction List</h1>
-        <div>
-            {transaction.map((purchase,index)=> {
+        <div className="masterCard">
+            {transaction.map((purchase)=> {
 
                 return <TransactionCard 
                 key={purchase.id}
@@ -26,6 +27,8 @@ function TransactionList(){
                 date={purchase.date}
                 item_name= {purchase.item_name}
                 amount={purchase.amount}
+                from={purchase.from}
+                category={purchase.category}
                 />
                 
             })}

@@ -1,0 +1,28 @@
+.nav {
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: green;
+    height: 80px;
+}
+
+.header_title{
+
+   text-decoration: none;
+   color: black;
+   font-family:'Times New Roman', Times, serif;
+   font-size: xx-large;
+}
+
+.header_title :hover{
+ color:white;
+}
+
+.header_button{
+border-radius: 45px;
+background-color: white;
+}

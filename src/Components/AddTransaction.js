@@ -13,7 +13,7 @@ function AddTransaction(){
       amount: "",
       date: "",
       from: "",
-      category: "",
+      category: ""
       
     });
   

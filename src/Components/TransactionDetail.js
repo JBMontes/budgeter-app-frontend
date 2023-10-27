@@ -1,23 +1,24 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
+import "../Styles/TransactionDetail.css"
 const API = process.env.REACT_APP_API_URL;
 
 function TransactionDetail(){
 
-    const [transaction, setTransaction] = useState({ id: "" });
+    const [transaction, setTransaction] = useState({});
     let navigate = useNavigate();
-    let { index } = useParams();
+    let { id } = useParams();
     
     useEffect(() => {
-        fetch(`${API}/transactions/${index}`)
+        fetch(`${API}/transactions/${id}`)
         .then((response) => response.json())
         .then((responseJSON) => setTransaction(responseJSON))
         .catch(() => navigate("/not-found"));
-    }, [index, navigate]);
+    }, [id, navigate]);
     
 
     const handleDelete = () => {
-        fetch(`${API}/transactions/${index}`, {
+        fetch(`${API}/transactions/${id}`, {
             method: 'DELETE'
         })
         .then(() => {
@@ -28,8 +29,10 @@ function TransactionDetail(){
             console.error('Error deleting:', error);
         });
     };
+
     return(
         <>
+        <div className="borderMaster">
 <div className="details">
 
      <h1>ID: {transaction.id}</h1>
@@ -43,14 +46,23 @@ function TransactionDetail(){
      <h2>Category: {transaction.category}</h2>
 
 </div>
+</div>
+<div className="button_details_master">
 
-<div className="button">
-<Link to="/transactions/edit"><button> Edit </button></Link>
+<div className="button_details">
 
-<button onClick={handleDelete}> Delete </button>
+<Link to="/transactions" className="backButtonL"><button className="backButton">↩︎</button></Link>
+
+<Link to={`/transactions/${id}/edit`}><button className="detailButton"> Edit  </button></Link>
+
+
+<button onClick={handleDelete} className="detailButtonD"> 🗑️ </button>
+
+</div>
 </div>
 </>
     )
+    
 }
 
 export default TransactionDetail
