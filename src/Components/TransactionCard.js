@@ -1,24 +1,22 @@
-import { Link } from "react-router-dom"
-import "../Styles/TransactionCard.css"
+import { Link } from "react-router-dom";
+import "../Styles/TransactionCard.css";
 
-function TransactionCard({id,date, item_name,amount}){
+function TransactionCard({ id, date, item_name, amount }) {
+  return (
+    <>
+      <div className="transactionCard">
+        <div className="card">
+          <p>{date}</p>
 
-    return(<>
-   
+          <Link to={`/transactions/${id}`} className="transactionCardLink">
+            <p>{item_name}</p>
+          </Link>
 
-        <div className='transactionCard'>
-            
-            <div className="card">
-
-            <p>{date}</p>
-            
-            <Link to={`/transactions/${id}`} className="transactionCardLink"><p>{item_name}</p></Link>
-
-            <p>${amount}.00</p>
-            </div>
+          <p>${amount}.00</p>
         </div>
-      
-    </>)
+      </div>
+    </>
+  );
 }
 
-export default TransactionCard
+export default TransactionCard;

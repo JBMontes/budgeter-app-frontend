@@ -1,84 +1,71 @@
-.backButtonL{
-    text-decoration: none;
+.backButtonL {
+  text-decoration: none;
 }
-.details{
-    border: 2px solid black;
-    width: 25%;
-    padding: 30px;
-    font-family:monospace;
-    color: red;
-    background-color: white;
-    opacity: .9;
-
-}
-
-.borderMaster{
-    display:flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    margin-top: 100px;
-}
-.button_details_master{
-padding:10px;
-display:flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-
-}
-.button_details{
-   /* padding:10px; */
-   display:flex;
-   flex-direction: row;
-   align-items: center;
-   gap:20px;
-   /* justify-items: center; */
-   /* justify-content: center; */
-  
-  
+.details {
+  border: 2px solid black;
+  width: 25%;
+  padding: 30px;
+  font-family: monospace;
+  color: red;
+  background-color: white;
+  opacity: 0.9;
 }
 
-
-.detailButton{
-    border-radius: 50px;
-    padding:5px;
-    background-color:rgb(131, 141, 150);
-    font-family: monospace;
+.borderMaster {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.button_details_master {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.button_details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 
-
-.detailButtonD{
-    border-radius: 90px;
-    padding:5px;
-    background-color:rgb(255, 255, 255);
-    font-family: monospace;
-    font-size: x-large;
-    /* width:10%; */
-    /* display:flex;
-    justify-content: center;
-    align-items: center; */
+.detailButton {
+  border-radius: 50px;
+  padding: 5px;
+  background-color: rgb(131, 141, 150);
+  font-family: monospace;
 }
 
-.detailButtonD:hover{
-    background-color: rgb(212, 68, 68);
+.detailButtonD {
+  border-radius: 90px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  font-family: monospace;
+  font-size: x-large;
 }
 
-.detailButton:hover{
-    background-color: rgb(212, 157, 68);
+.detailButtonD:hover {
+  background-color: rgb(212, 68, 68);
 }
 
-.backButton{
-    border-radius:50px;
-    font-size: x-large;   
+.detailButton:hover {
+  background-color: rgb(212, 157, 68);
 }
 
-.backButton:hover{
-    background-color:black;
-    color:white;
-    border-color: white;
+.backButton {
+  border-radius: 50px;
+  font-size: x-large;
 }
 
-.detailsH{
-    color:red
+.backButton:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.detailsH {
+  color: red;
 }

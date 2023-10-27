@@ -11,16 +11,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-        
         <NavigationBar />
 
         <Routes>
           <Route path="/transactions" element={<TransactionList />} />
           <Route path="/transactions/new" element={<AddTransaction />} />
           <Route path="/transactions/:id" element={<TransactionDetail />} />
-          <Route path="/transactions/:id/edit" element={<EditTransaction/>} />
+          <Route path="/transactions/:id/edit" element={<EditTransaction />} />
         </Routes>
-        
       </Router>
     </div>
   );
