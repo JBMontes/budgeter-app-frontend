@@ -11,7 +11,7 @@ function Sum() {
       .then((response) => response.json())
       .then((responseJSON) => setTransaction(responseJSON))
       .catch((error) => console.error(error));
-  }, [API]);
+  }, [API,transaction]);
 
   for (let price of transaction) {
     sumArr.push(price.amount);
