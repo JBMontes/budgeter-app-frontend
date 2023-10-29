@@ -2,7 +2,7 @@
     background-image: url("https://plus.unsplash.com/premium_photo-1679785709853-0e50df422c1c?auto=format&fit=crop&q=80&w=2530&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size:cover;
     height:700px;
-    margin-top: -22px;
+    /* margin-top: -22px; */
    display:flex;
    flex-direction: column;
    justify-content:space-around;
@@ -10,8 +10,8 @@
 }
 
 .homeH1{
-    animation-name: slide;
-    animation-duration: 5s;
+    animation-name: mist;
+    animation-duration: 7s;
 
     border: 2px solid black;
     background-color: blanchedalmond;
@@ -20,14 +20,16 @@
     border-radius: 100px;
 }
 
-@keyframes slide {
+@keyframes mist {
     from {
-      position: relative;
-      left: 1300px;
+      /* position: relative;
+      left: 1300px; */
+      opacity: -3;
     }
     to {
-      position: relative;
-      left: 0px;
+      /* position: relative;
+      left: 0px; */
+      opacity: 1;
     }
   }
   
