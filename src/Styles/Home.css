@@ -1,12 +1,13 @@
 .home{
     background-image: url("https://plus.unsplash.com/premium_photo-1679785709853-0e50df422c1c?auto=format&fit=crop&q=80&w=2530&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size:cover;
-    height:700px;
+    height:900px;
     /* margin-top: -22px; */
    display:flex;
    flex-direction: column;
    justify-content:space-around;
    align-items: center;
+   
 }
 
 .homeH1{
