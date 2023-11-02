@@ -8,5 +8,7 @@ To use the app, all you have to do is click the link "https://mybudgeter.netlify
 
 After the deed is done, users will be moved back to a transaction list page, where all transactions inputted will be accessible with the total amount spent shown at the top of the screen. 
 
-User's also have the ability to click on specific items to view and manage the information added. If any mistakes were made when inputting any information, an edit button is available for users to make any changes at their discretion. A delete button, with a trash icon,is also added if you want to get rid of a transaction in general. 
+Users also have the ability to click on specific items to view and manage the information added. If any mistakes were made when inputting any information, an edit button is available for users to make any changes at their discretion. A delete button, with a trash icon,is also added if you want to get rid of a transaction in general. 
+
+Enjoy!
 
