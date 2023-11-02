@@ -9,7 +9,7 @@ function TransactionDetail() {
   let { id } = useParams();
   
   useEffect(() => {
-      fetch(`${API}transactions/${id}`)
+      fetch(`${API}/transactions/${id}`)
       .then((response) => response.json())
       .then((responseJSON) => setTransaction(responseJSON))
       .catch(() => navigate("/not-found"));

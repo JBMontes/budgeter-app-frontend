@@ -16,7 +16,7 @@ function AddTransaction() {
   });
 
   const addTransaction = () => {
-    fetch(`${API}transactions`, {
+    fetch(`${API}/transactions`, {
       method: "POST",
       body: JSON.stringify(transaction),
       headers: {
