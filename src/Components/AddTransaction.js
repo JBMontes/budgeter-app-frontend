@@ -16,7 +16,7 @@ function AddTransaction() {
   });
 
   const addTransaction = () => {
-    fetch(`${API}/transactions`, {
+    fetch(`${API}transactions`, {
       method: "POST",
       body: JSON.stringify(transaction),
       headers: {
@@ -30,7 +30,6 @@ function AddTransaction() {
   };
 
   const handleTextChange = (event) => {
-   
     if (!transaction.id) {
       const randomId = Math.floor(Math.random() * 1000000);
       setTransaction((prev) => ({

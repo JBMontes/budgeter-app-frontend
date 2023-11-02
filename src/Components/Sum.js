@@ -7,7 +7,7 @@ function Sum() {
   const [transaction, setTransaction] = useState([]);
 
   useEffect(() => {
-    fetch(`${API}/transactions`)
+    fetch(`${API}transactions`)
       .then((response) => response.json())
       .then((responseJSON) => setTransaction(responseJSON))
       .catch((error) => console.error(error));
